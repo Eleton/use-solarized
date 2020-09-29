@@ -52,16 +52,16 @@ Calling `toggleColorMode()` will toggle between light mode and dark mode.
 
 Solarized has 8 accent colors, which can either be accessed by name or by index:
 
-| Index | Key       | Code    | Color                                                            |
-| ----- | --------- | ------- | ---------------------------------------------------------------- |
-| 0     | `yellow`  | #b58900 | <div style="background:#b58900;width:32px;height:1.5rem;"></div> |
-| 1     | `orange`  | #cb4b16 | <div style="background:#cb4b16;width:32px;height:1.5rem;"></div> |
-| 2     | `red`     | #dc322f | <div style="background:#dc322f;width:32px;height:1.5rem;"></div> |
-| 3     | `magenta` | #d33682 | <div style="background:#d33682;width:32px;height:1.5rem;"></div> |
-| 4     | `violet`  | #6c71c4 | <div style="background:#6c71c4;width:32px;height:1.5rem;"></div> |
-| 5     | `blue`    | #268bd2 | <div style="background:#268bd2;width:32px;height:1.5rem;"></div> |
-| 6     | `cyan`    | #2aa198 | <div style="background:#2aa198;width:32px;height:1.5rem;"></div> |
-| 7     | `green`   | #859900 | <div style="background:#859900;width:32px;height:1.5rem;"></div> |
+| Index | Key       | Code    | Color                            |
+| ----- | --------- | ------- | -------------------------------- |
+| 0     | `yellow`  | #b58900 | ![yellow](./images/yellow.png)   |
+| 1     | `orange`  | #cb4b16 | ![orange](./images/orange.png)   |
+| 2     | `red`     | #dc322f | ![red](./images/red.png)         |
+| 3     | `magenta` | #d33682 | ![magenta](./images/magenta.png) |
+| 4     | `violet`  | #6c71c4 | ![violet](./images/violet.png)   |
+| 5     | `blue`    | #268bd2 | ![blue](./images/blue.png)       |
+| 6     | `cyan`    | #2aa198 | ![cyan](./images/cyan.png)       |
+| 7     | `green`   | #859900 | ![green](./images/green.png)     |
 
 ```js
 const { colors } = useSolarized();
@@ -75,23 +75,23 @@ Solarized has 8 content colors, using 5 for light mode and 5 for dark mode:
 
 #### Light Mode
 
-| Name   | Key          | Code    | Color                                                            | Description                 |
-| ------ | ------------ | ------- | ---------------------------------------------------------------- | --------------------------- |
-| base01 | `emphasized` | #586e75 | <div style="background:#586e75;width:32px;height:1.5rem;"></div> | Optional emphasized content |
-| base00 | `primary`    | #657b83 | <div style="background:#657b83;width:32px;height:1.5rem;"></div> | Body text / primary content |
-| base1  | `secondary`  | #93a1a1 | <div style="background:#93a1a1;width:32px;height:1.5rem;"></div> | Secondary content           |
-| base2  | `highlight`  | #eee8d5 | <div style="background:#eee8d5;width:32px;height:1.5rem;"></div> | Background highlights       |
-| base3  | `background` | #fdf6e3 | <div style="background:#fdf6e3;width:32px;height:1.5rem;"></div> | Bachground                  |
+| Name   | Key          | Code    | Color                          | Description                 |
+| ------ | ------------ | ------- | ------------------------------ | --------------------------- |
+| base01 | `emphasized` | #586e75 | ![base01](./images/base01.png) | Optional emphasized content |
+| base00 | `primary`    | #657b83 | ![base00](./images/base00.png) | Body text / primary content |
+| base1  | `secondary`  | #93a1a1 | ![base1](./images/base1.png)   | Secondary content           |
+| base2  | `highlight`  | #eee8d5 | ![base2](./images/base2.png)   | Background highlights       |
+| base3  | `background` | #fdf6e3 | ![base3](./images/base3.png)   | Bachground                  |
 
 #### Dark Mode
 
-| Name   | Key          | Code    | Color                                                            | Description                 |
-| ------ | ------------ | ------- | ---------------------------------------------------------------- | --------------------------- |
-| base1  | `emphasized` | #93a1a1 | <div style="background:#93a1a1;width:32px;height:1.5rem;"></div> | Optional emphasized content |
-| base0  | `primary`    | #839496 | <div style="background:#839496;width:32px;height:1.5rem;"></div> | Body text / primary content |
-| base01 | `secondary`  | #586e75 | <div style="background:#586e75;width:32px;height:1.5rem;"></div> | Secondary content           |
-| base02 | `highlight`  | #073642 | <div style="background:#073642;width:32px;height:1.5rem;"></div> | Background highlights       |
-| base03 | `background` | #002b36 | <div style="background:#002b36;width:32px;height:1.5rem;"></div> | Bachground                  |
+| Name   | Key          | Code    | Color                          | Description                 |
+| ------ | ------------ | ------- | ------------------------------ | --------------------------- |
+| base1  | `emphasized` | #93a1a1 | ![base1](./images/base1.png)   | Optional emphasized content |
+| base0  | `primary`    | #839496 | ![base0](./images/base0.png)   | Body text / primary content |
+| base01 | `secondary`  | #586e75 | ![base01](./images/base01.png) | Secondary content           |
+| base02 | `highlight`  | #073642 | ![base02](./images/base02.png) | Background highlights       |
+| base03 | `background` | #002b36 | ![base03](./images/base03.png) | Bachground                  |
 
 ```js
 const { colors, toggleColorMode } = useSolarized();
