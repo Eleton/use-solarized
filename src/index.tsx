@@ -1,5 +1,21 @@
 import { useState, useEffect } from "react";
 
+interface Colors {
+  emphazised: string;
+  primary: string;
+  secondary: string;
+  highlight: string;
+  background: string;
+  yellow: string;
+  orange: string;
+  red: string;
+  magenta: string;
+  violet: string;
+  blue: string;
+  cyan: string;
+  green: string;
+}
+
 const c = {
   light: ["#fdf6e3", "#eee8d5", "#93a1a1", "#839496"],
   dark: ["#002b36", "#073642", "#586e75", "#657b83"],
@@ -13,7 +29,9 @@ const c = {
   green: "#859900",
 };
 
-const useSolarized = (startInLightMode = true) => {
+const useSolarized = (
+  startInLightMode = true
+): { colors: Colors | {}; toggleColorMode: Function } => {
   const [lightMode, setLightMode] = useState(startInLightMode);
   const [colors, setColors] = useState({});
 
